@@ -1,0 +1,26 @@
+[
+    {
+        "author": "J.K. Rowling",
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "isbn": "978-1338878929",
+        "status": 0,
+        "genre": "Fiction",
+        "desc": "Adaptation of the first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths."
+    },
+    {
+        "author": "J.K. Rowling",
+        "title": "Harry Potter and the Chamber of Secrets",
+        "isbn": "978-0439064873",
+        "status": 0,
+        "genre": "Fiction",
+        "desc": "The second instalment of boy wizard Harry Potter's adventures at Hogwarts School of Witchcraft and Wizardry, based on the novel by JK Rowling. A mysterious elf tells Harry to expect trouble during his second year at Hogwarts, but nothing can prepare him for trees that fight back, flying cars, spiders that talk and deadly warnings written in blood on the walls of the school."
+    },
+    {
+        "author": "J.K. Rowling",
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "isbn": "978-0545582933",
+        "status": 0,
+        "genre": "Fiction",
+        "desc": "Harry Potter's (Daniel Radcliffe) third year at Hogwarts starts off badly when he learns deranged killer Sirius Black (Gary Oldman) has escaped from Azkaban prison and is bent on murdering the teenage wizard. While Hermione's (Emma Watson) cat torments Ron's (Rupert Grint) sickly rat, causing a rift among the trio, a swarm of nasty Dementors is sent to protect the school from Black. A mysterious new teacher helps Harry learn to defend himself, but what is his secret tie to Sirius Black?"
+    }
+]
