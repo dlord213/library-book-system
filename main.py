@@ -45,7 +45,15 @@ class mainApp(QMainWindow, Ui_libraryApp):
         # ADD BOOKS PAGE
         self.addBook_HomeBtn.setIcon(QPixmap("./icons/arrow-left-solid.svg"))
 
+        # REMOVE BOOKS PAGE
+        self.removeBook_HomeBtn.setIcon(
+            QPixmap("./icons/arrow-left-solid.svg"))
+
     def initBtnsFunctions(self):
+        self.landing_Btn.clicked.connect(
+            lambda: self.libStackedWidget.setCurrentIndex(1))
+
+        # HOME PAGE
         with open(dataPath, 'r') as file:
             data = json.load(file)
             self.home_TotalBooksLbl.setText(
@@ -60,8 +68,8 @@ class mainApp(QMainWindow, Ui_libraryApp):
                     "You can't browse the book list, library is offline.")
                 messageBox.exec()
 
-        self.landing_Btn.clicked.connect(
-            lambda: self.libStackedWidget.setCurrentIndex(1))
+        self.home_RemoveBooksBtn.clicked.connect(
+            lambda: self.libStackedWidget.setCurrentIndex(4))
         self.home_AddBooksBtn.clicked.connect(
             lambda: self.libStackedWidget.setCurrentIndex(3))
 
@@ -202,7 +210,8 @@ class mainApp(QMainWindow, Ui_libraryApp):
 
         if self.addBook_DescTextEdit.toPlainText() == '':
             messageBox.setWindowTitle("Description is empty!")
-            messageBox.setText("Please enter the description/synopsis of the book.")
+            messageBox.setText(
+                "Please enter the description/synopsis of the book.")
             messageBox.exec()
         else:
             desc = self.addBook_DescTextEdit.toPlainText()

@@ -685,6 +685,62 @@ class Ui_libraryApp(object):
         self.verticalLayout_10.addWidget(self.addBook_SubmitBtn)
 
         self.libStackedWidget.addWidget(self.addBookPage)
+        self.removeBookPage = QWidget()
+        self.removeBookPage.setObjectName(u"removeBookPage")
+        self.verticalLayout_13 = QVBoxLayout(self.removeBookPage)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.removeBookHeaderFrame = QFrame(self.removeBookPage)
+        self.removeBookHeaderFrame.setObjectName(u"removeBookHeaderFrame")
+        sizePolicy2.setHeightForWidth(self.removeBookHeaderFrame.sizePolicy().hasHeightForWidth())
+        self.removeBookHeaderFrame.setSizePolicy(sizePolicy2)
+        self.removeBookHeaderFrame.setStyleSheet(u"QPushButton {\n"
+"	background-color: #e7d5d5;\n"
+"	color: #864e4b;\n"
+"}\n"
+"QPushButton:hover {\n"
+"	background-color: #864e4b;\n"
+"	color: #f2e9e8;\n"
+"}")
+        self.removeBookHeaderFrame.setFrameShape(QFrame.NoFrame)
+        self.removeBookHeaderFrame.setFrameShadow(QFrame.Plain)
+        self.horizontalLayout_10 = QHBoxLayout(self.removeBookHeaderFrame)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.removeBook_HomeBtn = QPushButton(self.removeBookHeaderFrame)
+        self.removeBook_HomeBtn.setObjectName(u"removeBook_HomeBtn")
+        sizePolicy1.setHeightForWidth(self.removeBook_HomeBtn.sizePolicy().hasHeightForWidth())
+        self.removeBook_HomeBtn.setSizePolicy(sizePolicy1)
+        self.removeBook_HomeBtn.setMaximumSize(QSize(64, 64))
+        self.removeBook_HomeBtn.setCursor(QCursor(Qt.PointingHandCursor))
+        self.removeBook_HomeBtn.setIconSize(QSize(32, 32))
+
+        self.horizontalLayout_10.addWidget(self.removeBook_HomeBtn)
+
+        self.removeBook_HeaderLbl = QLabel(self.removeBookHeaderFrame)
+        self.removeBook_HeaderLbl.setObjectName(u"removeBook_HeaderLbl")
+        sizePolicy2.setHeightForWidth(self.removeBook_HeaderLbl.sizePolicy().hasHeightForWidth())
+        self.removeBook_HeaderLbl.setSizePolicy(sizePolicy2)
+        self.removeBook_HeaderLbl.setFont(font7)
+        self.removeBook_HeaderLbl.setStyleSheet(u"QLabel {\n"
+"	background-color: #864e4b;\n"
+"	color: #f2e9e8;\n"
+"	border-radius: 6px;\n"
+"	padding: 4px 4px 4px 4px;\n"
+"}")
+
+        self.horizontalLayout_10.addWidget(self.removeBook_HeaderLbl)
+
+
+        self.verticalLayout_13.addWidget(self.removeBookHeaderFrame)
+
+        self.removeBookMainFrame = QFrame(self.removeBookPage)
+        self.removeBookMainFrame.setObjectName(u"removeBookMainFrame")
+        self.removeBookMainFrame.setFrameShape(QFrame.StyledPanel)
+        self.removeBookMainFrame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_13.addWidget(self.removeBookMainFrame)
+
+        self.libStackedWidget.addWidget(self.removeBookPage)
 
         self.verticalLayout.addWidget(self.libStackedWidget)
 
@@ -692,7 +748,7 @@ class Ui_libraryApp(object):
 
         self.retranslateUi(libraryApp)
 
-        self.libStackedWidget.setCurrentIndex(2)
+        self.libStackedWidget.setCurrentIndex(4)
 
 
         QMetaObject.connectSlotsByName(libraryApp)
@@ -729,5 +785,7 @@ class Ui_libraryApp(object):
         self.addBook_GenreLbl.setText(QCoreApplication.translate("libraryApp", u"Genre", None))
         self.addBook_DescLbl.setText(QCoreApplication.translate("libraryApp", u"Description", None))
         self.addBook_SubmitBtn.setText(QCoreApplication.translate("libraryApp", u"Submit", None))
+        self.removeBook_HomeBtn.setText("")
+        self.removeBook_HeaderLbl.setText(QCoreApplication.translate("libraryApp", u"Remove Book", None))
     # retranslateUi
 
