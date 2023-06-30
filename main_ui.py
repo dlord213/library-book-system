@@ -687,8 +687,8 @@ class Ui_libraryApp(object):
         self.libStackedWidget.addWidget(self.addBookPage)
         self.removeBookPage = QWidget()
         self.removeBookPage.setObjectName(u"removeBookPage")
-        self.verticalLayout_13 = QVBoxLayout(self.removeBookPage)
-        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.verticalLayout_16 = QVBoxLayout(self.removeBookPage)
+        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
         self.removeBookHeaderFrame = QFrame(self.removeBookPage)
         self.removeBookHeaderFrame.setObjectName(u"removeBookHeaderFrame")
         sizePolicy2.setHeightForWidth(self.removeBookHeaderFrame.sizePolicy().hasHeightForWidth())
@@ -731,14 +731,113 @@ class Ui_libraryApp(object):
         self.horizontalLayout_10.addWidget(self.removeBook_HeaderLbl)
 
 
-        self.verticalLayout_13.addWidget(self.removeBookHeaderFrame)
+        self.verticalLayout_16.addWidget(self.removeBookHeaderFrame)
 
         self.removeBookMainFrame = QFrame(self.removeBookPage)
         self.removeBookMainFrame.setObjectName(u"removeBookMainFrame")
-        self.removeBookMainFrame.setFrameShape(QFrame.StyledPanel)
-        self.removeBookMainFrame.setFrameShadow(QFrame.Raised)
+        self.removeBookMainFrame.setFrameShape(QFrame.NoFrame)
+        self.removeBookMainFrame.setFrameShadow(QFrame.Plain)
+        self.horizontalLayout_11 = QHBoxLayout(self.removeBookMainFrame)
+        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
+        self.horizontalLayout_11.setContentsMargins(0, 0, 0, 0)
+        self.removeBookListWidget = QListWidget(self.removeBookMainFrame)
+        self.removeBookListWidget.setObjectName(u"removeBookListWidget")
+        sizePolicy.setHeightForWidth(self.removeBookListWidget.sizePolicy().hasHeightForWidth())
+        self.removeBookListWidget.setSizePolicy(sizePolicy)
+        self.removeBookListWidget.setFrameShape(QFrame.NoFrame)
+        self.removeBookListWidget.setFrameShadow(QFrame.Plain)
+        self.removeBookListWidget.setWordWrap(True)
 
-        self.verticalLayout_13.addWidget(self.removeBookMainFrame)
+        self.horizontalLayout_11.addWidget(self.removeBookListWidget)
+
+        self.removeBookRightFrame = QFrame(self.removeBookMainFrame)
+        self.removeBookRightFrame.setObjectName(u"removeBookRightFrame")
+        sizePolicy3.setHeightForWidth(self.removeBookRightFrame.sizePolicy().hasHeightForWidth())
+        self.removeBookRightFrame.setSizePolicy(sizePolicy3)
+        self.removeBookRightFrame.setFrameShape(QFrame.NoFrame)
+        self.removeBookRightFrame.setFrameShadow(QFrame.Plain)
+        self.verticalLayout_13 = QVBoxLayout(self.removeBookRightFrame)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.verticalLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.removeBookDetailsFrame = QFrame(self.removeBookRightFrame)
+        self.removeBookDetailsFrame.setObjectName(u"removeBookDetailsFrame")
+        sizePolicy.setHeightForWidth(self.removeBookDetailsFrame.sizePolicy().hasHeightForWidth())
+        self.removeBookDetailsFrame.setSizePolicy(sizePolicy)
+        self.removeBookDetailsFrame.setFrameShape(QFrame.NoFrame)
+        self.removeBookDetailsFrame.setFrameShadow(QFrame.Plain)
+        self.verticalLayout_14 = QVBoxLayout(self.removeBookDetailsFrame)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.removeBook_TitleLbl = QLabel(self.removeBookDetailsFrame)
+        self.removeBook_TitleLbl.setObjectName(u"removeBook_TitleLbl")
+        sizePolicy.setHeightForWidth(self.removeBook_TitleLbl.sizePolicy().hasHeightForWidth())
+        self.removeBook_TitleLbl.setSizePolicy(sizePolicy)
+        self.removeBook_TitleLbl.setFont(font14)
+        self.removeBook_TitleLbl.setWordWrap(True)
+
+        self.verticalLayout_14.addWidget(self.removeBook_TitleLbl)
+
+        self.removeBook_ISBNLbl = QLabel(self.removeBookDetailsFrame)
+        self.removeBook_ISBNLbl.setObjectName(u"removeBook_ISBNLbl")
+        sizePolicy.setHeightForWidth(self.removeBook_ISBNLbl.sizePolicy().hasHeightForWidth())
+        self.removeBook_ISBNLbl.setSizePolicy(sizePolicy)
+        font15 = QFont()
+        font15.setFamilies([u"Montserrat Medium"])
+        font15.setPointSize(18)
+        self.removeBook_ISBNLbl.setFont(font15)
+        self.removeBook_ISBNLbl.setWordWrap(True)
+
+        self.verticalLayout_14.addWidget(self.removeBook_ISBNLbl)
+
+        self.removeBook_AuthorLbl = QLabel(self.removeBookDetailsFrame)
+        self.removeBook_AuthorLbl.setObjectName(u"removeBook_AuthorLbl")
+        sizePolicy.setHeightForWidth(self.removeBook_AuthorLbl.sizePolicy().hasHeightForWidth())
+        self.removeBook_AuthorLbl.setSizePolicy(sizePolicy)
+        self.removeBook_AuthorLbl.setFont(font9)
+        self.removeBook_AuthorLbl.setWordWrap(True)
+
+        self.verticalLayout_14.addWidget(self.removeBook_AuthorLbl)
+
+        self.removeBook_GenreLbl = QLabel(self.removeBookDetailsFrame)
+        self.removeBook_GenreLbl.setObjectName(u"removeBook_GenreLbl")
+        sizePolicy.setHeightForWidth(self.removeBook_GenreLbl.sizePolicy().hasHeightForWidth())
+        self.removeBook_GenreLbl.setSizePolicy(sizePolicy)
+        self.removeBook_GenreLbl.setFont(font9)
+        self.removeBook_GenreLbl.setWordWrap(True)
+
+        self.verticalLayout_14.addWidget(self.removeBook_GenreLbl)
+
+
+        self.verticalLayout_13.addWidget(self.removeBookDetailsFrame)
+
+        self.removeBookStatusBtnsFrame = QFrame(self.removeBookRightFrame)
+        self.removeBookStatusBtnsFrame.setObjectName(u"removeBookStatusBtnsFrame")
+        sizePolicy2.setHeightForWidth(self.removeBookStatusBtnsFrame.sizePolicy().hasHeightForWidth())
+        self.removeBookStatusBtnsFrame.setSizePolicy(sizePolicy2)
+        self.removeBookStatusBtnsFrame.setStyleSheet(u"QPushButton:hover {\n"
+"	background-color: #e7d5d5;\n"
+"	color: #864e4b;\n"
+"}")
+        self.removeBookStatusBtnsFrame.setFrameShape(QFrame.NoFrame)
+        self.removeBookStatusBtnsFrame.setFrameShadow(QFrame.Plain)
+        self.horizontalLayout_12 = QHBoxLayout(self.removeBookStatusBtnsFrame)
+        self.horizontalLayout_12.setSpacing(0)
+        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
+        self.horizontalLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.removeBook_RemoveBtn = QPushButton(self.removeBookStatusBtnsFrame)
+        self.removeBook_RemoveBtn.setObjectName(u"removeBook_RemoveBtn")
+        self.removeBook_RemoveBtn.setFont(font3)
+        self.removeBook_RemoveBtn.setCursor(QCursor(Qt.PointingHandCursor))
+
+        self.horizontalLayout_12.addWidget(self.removeBook_RemoveBtn)
+
+
+        self.verticalLayout_13.addWidget(self.removeBookStatusBtnsFrame)
+
+
+        self.horizontalLayout_11.addWidget(self.removeBookRightFrame)
+
+
+        self.verticalLayout_16.addWidget(self.removeBookMainFrame)
 
         self.libStackedWidget.addWidget(self.removeBookPage)
 
@@ -787,5 +886,10 @@ class Ui_libraryApp(object):
         self.addBook_SubmitBtn.setText(QCoreApplication.translate("libraryApp", u"Submit", None))
         self.removeBook_HomeBtn.setText("")
         self.removeBook_HeaderLbl.setText(QCoreApplication.translate("libraryApp", u"Remove Book", None))
+        self.removeBook_TitleLbl.setText(QCoreApplication.translate("libraryApp", u"TITLE", None))
+        self.removeBook_ISBNLbl.setText(QCoreApplication.translate("libraryApp", u"ISBN", None))
+        self.removeBook_AuthorLbl.setText(QCoreApplication.translate("libraryApp", u"AUTHOR", None))
+        self.removeBook_GenreLbl.setText(QCoreApplication.translate("libraryApp", u"GENRE", None))
+        self.removeBook_RemoveBtn.setText(QCoreApplication.translate("libraryApp", u"Remove", None))
     # retranslateUi
 
