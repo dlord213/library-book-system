@@ -267,7 +267,10 @@ class mainApp(QMainWindow, Ui_libraryApp):
             json.dump(temp, file, indent=4, separators=(',', ': ')
                       )
 
-        self.getBookInfo(1)
+        self.libStackedWidget.setCurrentIndex(1)
+        self.viewBooksListWidget.clear()
+        self.removeBookListWidget.clear()
+        self.initBookList()
 
     def removeBook(self):
         listWidget = self.removeBookListWidget
